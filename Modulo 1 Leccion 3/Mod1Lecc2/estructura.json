@@ -1,0 +1,18 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "correo": "juan.perez@example.com"
+      }
+    ],
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Laptop HP",
+        "descripcion": "Laptop HP 14 pulgadas, Intel i5, 8GB RAM",
+        "precio": 750.99
+      }
+    ]
+  }
+  
