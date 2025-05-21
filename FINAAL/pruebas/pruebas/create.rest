@@ -1,0 +1,9 @@
+POST http://localhost:5000/recetas/nueva
+Content-Type: application/json
+
+{
+  "titulo": "Ensalada César",
+  "descripcion": "Una ensalada fresca con aderezo clásico.",
+  "ingredientes": "Lechuga, Pollo, Queso parmesano, Crutones, Aderezo César",
+  "instrucciones": "Mezclar todo en un bowl y servir frío."
+}

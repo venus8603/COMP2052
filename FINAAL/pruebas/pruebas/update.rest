@@ -1,0 +1,9 @@
+POST http://localhost:5000/recetas/editar/1
+Content-Type: application/json
+
+{
+  "titulo": "Ensalada César con Pollo",
+  "descripcion": "Versión mejorada de la receta clásica.",
+  "ingredientes": "Lechuga romana, Pollo a la parrilla, Crutones, Queso parmesano, Aderezo",
+  "instrucciones": "Cocina el pollo, mezcla todos los ingredientes y sirve."
+}

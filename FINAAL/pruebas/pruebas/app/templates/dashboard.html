@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h1>Bienvenido a tu Recetario</h1>
+    <p class="lead">Administra tus recetas favoritas desde aquí.</p>
+    <a href="{{ url_for('recetas') }}" class="btn btn-primary">Ver mis Recetas</a>
+</div>
+{% endblock %}

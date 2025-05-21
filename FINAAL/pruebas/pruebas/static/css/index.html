@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recetario Culinario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Recetario Culinario</h1>
+    <p>Organiza y guarda tus recetas favoritas</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Agregar nueva receta</h2>
+      <form id="form-receta">
+        <input type="text" id="titulo" placeholder="Título de la receta" required>
+        <textarea id="ingredientes" placeholder="Ingredientes (uno por línea)" required></textarea>
+        <textarea id="instrucciones" placeholder="Instrucciones de preparación" required></textarea>
+        <button type="submit">Guardar Receta</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>📋 Tus Recetas</h2>
+      <div id="lista-recetas" class="recetas-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ en COMP2052</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
