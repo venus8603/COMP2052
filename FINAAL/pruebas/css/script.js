@@ -3,10 +3,12 @@ document.getElementById('form-receta').addEventListener('submit', guardarReceta)
 
 function guardarReceta(e) {
   e.preventDefault();
-  
-  const titulo = document.getElementById('titulo').value;
-  const ingredientes = document.getElementById('ingredientes').value;
-  const instrucciones = document.getElementById('instrucciones').value;
+
+  const titulo = document.getElementById('titulo').value.trim();
+  const ingredientes = document.getElementById('ingredientes').value.trim();
+  const instrucciones = document.getElementById('instrucciones').value.trim();
+
+  if (!titulo || !ingredientes || !instrucciones) return;
 
   const receta = { titulo, ingredientes, instrucciones };
 
@@ -29,7 +31,7 @@ function mostrarRecetas() {
     div.className = 'receta';
     div.innerHTML = `
       <h3>${receta.titulo}</h3>
-      <p><strong>Ingredientes:</strong><br>${receta.ingredientes}</p>
+      <p><strong>Ingredientes:</strong><br>${receta.ingredientes.replace(/\n/g, '<br>')}</p>
       <p><strong>Instrucciones:</strong><br>${receta.instrucciones}</p>
       <button onclick="eliminarReceta(${index})">Eliminar</button>
     `;
